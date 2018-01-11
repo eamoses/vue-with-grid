@@ -1,0 +1,44 @@
+.container > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
+}
+
+button:focus {
+	outline: none;
+}
+
+.container > button:nth-child(1n) {
+  background-color: #96ceb4;
+}
+
+.container > button:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.container > button:nth-child(2n) {
+      background-color: #ff6f69;
+}
+
+.container > button:nth-child(4n) {
+      background-color: #ffcc5c;
+}
+
+.container {
+	height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto;
+}
+
+.list-group-item {
+    grid-column: 2 / -2;
+}
